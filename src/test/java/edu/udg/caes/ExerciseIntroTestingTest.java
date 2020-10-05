@@ -29,4 +29,29 @@ public class ExerciseIntroTestingTest {
         final int result = ExerciseIntroTesting.oddOrPos(new int []{-3, -2, 0, 1, 4});
         assertEquals(result, 3);
     }
+
+    @Test
+    public void testFindLast1(){
+        final int result = ExerciseIntroTesting.findLast(new int []{5, 1, 3}, 1);
+        assertEquals(result, 1);
+    }
+
+    @Test
+    public void testLastZero1(){
+        final int result = ExerciseIntroTesting.lastZero(new int []{9, 1, 0});
+        assertEquals(result, 2);
+    }
+
+    @Test
+    public void testCountPositive1(){
+        final int result = ExerciseIntroTesting.countPositive(new int []{-4, 2, -6, 2});
+        assertEquals(result, 2);
+    }
+
+    @Test
+    public void testOddOrPos1(){
+        final int result = ExerciseIntroTesting.oddOrPos(new int []{-3, -5, 2, 1, 4});
+        assertEquals(result, 3);
+    }
+
 }
