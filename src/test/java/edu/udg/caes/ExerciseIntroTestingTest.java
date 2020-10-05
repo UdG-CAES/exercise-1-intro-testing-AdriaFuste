@@ -51,7 +51,7 @@ public class ExerciseIntroTestingTest {
     @Test
     public void testOddOrPos1(){
         final int result = ExerciseIntroTesting.oddOrPos(new int []{-3, -5, 2, 1, 4});
-        assertEquals(result, 3);
+        assertEquals(result, 5);
     }
 
 }

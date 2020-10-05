@@ -1,5 +1,7 @@
 package edu.udg.caes;
 
+import static java.lang.StrictMath.abs;
+
 public class ExerciseIntroTesting {
 
     /**
@@ -19,7 +21,7 @@ public class ExerciseIntroTesting {
                 return i;
             }
         }
-        return -1;
+        return 0;
     }
 
     /**
@@ -31,7 +33,7 @@ public class ExerciseIntroTesting {
      */
     public static int lastZero (int[] x)
     {
-        for (int i = 0; i < x.length; i++)
+        for (int i = x.length -1; i >= 0; i--)
         {
             if (x[i] == 0)
             {
@@ -54,7 +56,7 @@ public class ExerciseIntroTesting {
 
         for (int i=0; i < x.length; i++)
         {
-            if (x[i] >= 0)
+            if (x[i] > 0)
             {
                 count++;
             }
@@ -77,11 +79,12 @@ public class ExerciseIntroTesting {
 
         for (int i = 0; i < x.length; i++)
         {
-            if (x[i]%2 == 1 || x[i] > 0)
+            if (abs(x[i])%2 == 1 || x[i] > 0)
             {
                 count++;
             }
         }
+
         return count;
     }
 
